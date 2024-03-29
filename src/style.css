@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+i{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar{
+    background-color: #212529;
+    color: #fff;
+    padding: 25px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.cart{
+    background-color: #fff;
+    color: #212529;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 4px;
+}
+
+.cartAmount{
+    font-size: 16px;
+    background-color: red;
+    color: #fff;
+    top: 13px;
+    right: 55px;
+    position: absolute;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+
+.shop{
+    display: grid;
+    grid-template-columns: repeat(4, 223px);
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 1000px) {
+    .shop{
+        grid-template-columns: repeat(2, 223px);
+    }
+}
+
+@media (max-width: 500px) {
+    .shop{
+        grid-template-columns: repeat(1, 223px);
+    }
+}
+
+.item{
+    border: 2px solid #212529;
+    border-radius: 4px;
+}
+
+.item img{
+    width: 100%;
+    border-radius: 2px 2px 0 0;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10%;
+}
+
+.price-quantity{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bi-dash-lg{
+    color: red;
+}
+
+.bi-plus-lg{
+    color: green;
+}
+
+.buttons{
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.text-center{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.homeBtn,
+.checkout,
+.removeAll{
+    border: none;
+    background-color: #212529;
+    color: #fff;
+    border-radius: 4px;
+    margin-top: 10px;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.checkout{
+    background-color: green;
+}
+.removeAll{
+    background-color: red;
+}
+
+.bi-x-lg{
+    color: red;
+    font-weight: bold;
+}
+
+.shopping-cart{
+    display: grid;
+    grid-template-columns: repeat(1, 320px);
+    gap: 15px;
+    justify-content: center;
+}
+
+.cart-item{
+    border: 2px solid #212529;
+    border-radius: 5px;
+    display: flex;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+}
+
+.title-price-x{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 195px;
+}
+
+.title-price{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart-item-price{
+    background-color: #212529;
+    color: #fff;
+    border-radius: 4px;
+    padding: 3px 4px ;
+}
